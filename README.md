@@ -1,70 +1,47 @@
-# PHP-MySQL-Araç satımı kiralama veritabanı sistemi
+# Araç Kiralama Sistemi (PHP & MySQL)
 
-##  Kullanılan Diller Ve Uygulamalar
+Bir araç kiralama firmasının müşteri ve araç yönetimini basit düzeyde yapabilmesi için geliştirilmiş, veritabanı destekli bir web uygulaması. Kullanıcılar kayıt olup giriş yapabilir, araç ekleyebilir, düzenleyebilir, silebilir ve kayıtlı araçları listeleyebilir.
 
-- PHP 
+## Kullanılan Teknolojiler
+
+- PHP
 - MySQL / MariaDB
 - HTML & CSS
-- FileZilla ile Hosting'e Yükleme
-- GitHub Deposu
+- FileZilla ile hosting'e yükleme
 
+## Özellikler
 
-- Bu proje, bir araç kiralama firmasının basit düzeyde müşteri ve araç yönetimini yapabilmesi için yapılmıştır. Kullanıcılar sisteme kayıt olabilir, giriş yapabilir ve sisteme araç ekleyebilir, düzenleyebilir ya da silebilir. Aynı zamanda kullanıcı oturumu açıldığında sistemde kayıtlı araçları görüntüleyebilir. Proje, sade bir kullanıcı arayüzü ile temel işlemlerini yerine getirecek şekilde tasarlanmıştır.
+- Kullanıcı kaydı ve oturum açma (müşteri bilgileri `musteri` tablosunda tutulur)
+- Araç ekleme, düzenleme, silme ve listeleme
+- Oturum bazlı panel ve güvenli çıkış
 
-## Proje yapısı
+## Ekran Görüntüleri
 
-- oto_sistem/
-- arac_ekle.php
-- arac_duzenle.php
-- arac_sil.php
-- arac_listele.php
-- kayit.php
-- giris.php
-- cikis.php
-- panel.php
-- veritabani.php
-- index.php
-
-Yapıda başlıklardan her şey belli olmakta fakat farklı olarak index.php bulunmakta. Bu kısım ile linkimiz direk giriş ekranına yönlendirmektedir.
-
-## Giriş ekranı
-
+### Giriş ekranı
 ![giriş](https://github.com/user-attachments/assets/1e7d580f-b0ca-441a-bf0e-9fc470b2d129)
 
-- Resimde de görüldüğü üzere kullanıcıyı giriş ekranı karşılayacaktır. Kullanıcımız bu ekranda kayıt olduktan sonra giriş işlemini gerçekleştirmektedir. Bu kısım ise musteri adlı veritabanı tablosunda bilgileri tutulmaktadır.
+Kullanıcıyı giriş ekranı karşılar. Kayıt olan kullanıcı e-posta ve şifresiyle giriş yapar.
 
-## Kayıt ekranı
-
+### Kayıt ekranı
 ![kayıt](https://github.com/user-attachments/assets/88436bee-4396-40f0-9a77-e037db3e1f5a)
 
-- Resimde görüldüğü üzere kullanıcımızdan ad,soyad,tc,telefon ve giriş ekranında istenecek olan eposta şifre bilgileri alınmaktadır.
+Kayıt sırasında ad, soyad, T.C. kimlik no, telefon, e-posta ve şifre bilgileri alınır.
 
-## Panel ekranı
-
+### Panel ekranı
 ![panel](https://github.com/user-attachments/assets/3fa5e932-161d-4679-b590-ad304db81b41)
 
-- Resimde görüldüğü üzere kullanıcımız giriş yaptıktan sonra karşımıza bu ekran gelmekte. Kullanıcımız burdan eklenen araçların listesini görmekte veya araç eklemesi yapabilmektedir. Tüm işlerini bitirdikten sonra çıkış yapabilmesi için çıkış yap seçeneği bulunmaktadır.
+Giriş sonrası kullanıcı eklenen araçların listesine ulaşabilir, yeni araç ekleyebilir veya çıkış yapabilir.
 
-## Ekleme ekranı
-
+### Araç ekleme ekranı
 ![ekleme](https://github.com/user-attachments/assets/8ae03684-af03-4cfc-9c4f-f763a4b3a31f)
 
-- Resimde görüldüğü gibi kullanıcımızdan araca dair bilgiler alınarak veritabanına kaydedilmektedir. Ekleme ekranın altında ise araç listene dön seçeneği ile listeye iletilmekte ve panele dön seçeneği ile seçim ekranına iletilmektedir.
+Araca ait bilgiler girilerek veritabanına kaydedilir. Ekranın altından araç listesine veya panele dönülebilir.
 
-## Araç listesi ekranı
-
+### Araç listesi ekranı
 ![liste](https://github.com/user-attachments/assets/d7b3a857-7c98-4335-8cc3-d746f661d197)
 
-- Bu kısımda şu ana kadar eklenen araçların bilgisi veritabanından çağırılarak ekranda kullanıcıya verilmektedir. Yan çubukta ise seçili olan aracı silme ve düzenleme işlemleri için seçenek bulunmaktadır. Düzenle seçeneği seçildiği zaman ekleme ekranı gelmekte ve bilgiler değiştirilebilmektedir.
+Kayıtlı araçlar veritabanından çekilerek listelenir. Yan çubuktan seçili aracı silme veya düzenleme işlemleri yapılabilir.
 
-## Site Linki Ve Video linki 
+## Tanıtım Videosu
 
--https://youtu.be/cTmZWhQHE_Y?si=J-QRbCG-lNzIJmfI
-
--http://95.130.171.20/~st22360859023
-
-
-
-
-
-
+[YouTube'da izle](https://youtu.be/cTmZWhQHE_Y)
